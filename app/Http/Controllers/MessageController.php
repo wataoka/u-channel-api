@@ -43,6 +43,17 @@ class MessageController extends Controller
     {
         return $message;
     }
+    
+    /**
+     * @param $univ_id
+     * @return \Illuminate\Http\Response
+     */
+    public function show_messages_univ($univ_id) {
+        $messages = \App\Message::where([
+            ['university_id', $univ_id]
+        ])->get();
+        return $messages;
+    }
 
     /**
      * Update the specified resource in storage.

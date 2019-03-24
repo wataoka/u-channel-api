@@ -13,10 +13,10 @@ class MessagesTableSeeder extends Seeder
     {
         DB::table('messages')->truncate();
         DB::table('messages')->insert([
-            ['text' => 'こんにちは', 'university_id' => 1],
-            ['text' => 'こんばんは', 'university_id' => 2],
-            ['text' => 'ありがとう', 'university_id' => 1],
-            ['text' => 'さようなら', 'university_id' => 1],
+            ['text' => 'hello', 'university_id' => 1],
+            ['text' => 'thanks', 'university_id' => 2],
+            ['text' => 'good bye', 'university_id' => 1],
+            ['text' => 'yes', 'university_id' => 1],
         ]);
     }
 }
