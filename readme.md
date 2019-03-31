@@ -14,7 +14,7 @@
 
 
 # API一覧
-
+## Message API
 | Method    | URI                                       |説明|
 |:--|:--|:--|
 | GET/HEAD  | api/messages                              |全メッセージの取得|
@@ -23,6 +23,10 @@
 | GET/HEAD  | api/messages/{message}                    |特定のメッセージの取得|
 | PUT/PATCH | api/messages/{message}                    |特定のメッセージの編集|
 | DELETE    | api/messages/{message}                    |特定のメッセージの削除|
+
+## University API
+| Method    | URI                                       |説明|
+|:--|:--|:--|
 | GET/HEAD  | api/universities                          |全大学の取得|
 | POST      | api/universities                          |大学の投稿|
 | GET/HEAD  | api/universities/{university}             |特定の大学の取得|
@@ -30,5 +34,9 @@
 | DELETE    | api/universities/{university}             |特定の大学の削除|
 | GET       | api/universities/region/{region}               |`logical_region`が`{region}`である大学の取得|
 | GET       | api/universities/prefecture/{prefecture}       |`logical_prefecture`が`{prefecture}`である大学の取得|
+
+## Other API
+| Method    | URI                                       |説明|
+|:--|:--|:--|
 | GET       | api/regions                               |全地域名の取得|
 | GET       | api/prefectures                           |全都道府県名の取得|
