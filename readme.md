@@ -15,16 +15,20 @@
 
 # API一覧
 
-| Method    | URI                           |説明|
+| Method    | URI                                       |説明|
 |:--|:--|:--|
-| GET/HEAD  | api/messages                  |全メッセージの取得|
-| POST      | api/messages                  |メッセージの投稿|
-| GET/HEAD  | api/messages/univ/{univ_id}   |`university_id`が`{univ_id}`であるメッセージの取得|
-| GET/HEAD  | api/messages/{message}        |特定のメッセージの取得|
-| PUT/PATCH | api/messages/{message}        |特定のメッセージの編集|
-| DELETE    | api/messages/{message}        |特定のメッセージの削除|
-| GET/HEAD  | api/universities              |全大学の取得|
-| POST      | api/universities              |大学の投稿|
-| GET/HEAD  | api/universities/{university} |特定の大学の取得|
-| PUT/PATCH | api/universities/{university} |特定の大学の編集|
-| DELETE    | api/universities/{university} |特定の大学の削除|
+| GET/HEAD  | api/messages                              |全メッセージの取得|
+| POST      | api/messages                              |メッセージの投稿|
+| GET/HEAD  | api/messages/university/{university_id}   |`university_id`が`{university_id}`であるメッセージの取得|
+| GET/HEAD  | api/messages/{message}                    |特定のメッセージの取得|
+| PUT/PATCH | api/messages/{message}                    |特定のメッセージの編集|
+| DELETE    | api/messages/{message}                    |特定のメッセージの削除|
+| GET/HEAD  | api/universities                          |全大学の取得|
+| POST      | api/universities                          |大学の投稿|
+| GET/HEAD  | api/universities/{university}             |特定の大学の取得|
+| PUT/PATCH | api/universities/{university}             |特定の大学の編集|
+| DELETE    | api/universities/{university}             |特定の大学の削除|
+| GET       | api/universities/region/{region}               |`logical_region`が`{region}`である大学の取得|
+| GET       | api/universities/prefecture/{prefecture}       |`logical_prefecture`が`{prefecture}`である大学の取得|
+| GET       | api/regions                               |全地域名の取得|
+| GET       | api/prefectures                           |全都道府県名の取得|
