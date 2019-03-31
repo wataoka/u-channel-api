@@ -47,6 +47,44 @@ class UniversityController extends Controller
     }
 
     /**
+     * @return \Illuminate\Http\Response
+     */
+    public function show_regions() {
+        $regions = \App\University::groupBy('logical_region')->get(['logical_region']);
+        return $regions;
+    }
+
+    /**
+     * @return \Illuminate\Http\Response
+     */
+    public function show_prefectures() {
+        $prefectures = \App\University::groupBy('logical_prefecture')->get(['logical_prefecture']);
+        return $prefectures;
+    }
+
+    /**
+     * @param $region
+     * @return \Illuminate\Http\Response
+     */
+    public function show_university_region($region) {
+        $universities = \App\University::where([
+            ['logical_region', $region]
+        ])->get();
+        return $universities;
+    }
+
+    /**
+     * @param $prefecture
+     * @return \Illuminate\Http\Response
+     */
+    public function show_university_prefecture($prefecture) {
+        $universities = \App\University::where([
+            ['logical_prefecture', $prefecture]
+        ])->get();
+        return $universities;
+    }
+
+    /**
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request

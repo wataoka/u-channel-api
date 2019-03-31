@@ -48,9 +48,9 @@ class MessageController extends Controller
      * @param $univ_id
      * @return \Illuminate\Http\Response
      */
-    public function show_messages_univ($univ_id) {
+    public function show_messages_university($university_id) {
         $messages = \App\Message::where([
-            ['university_id', $univ_id]
+            ['university_id', $university_id]
         ])->get();
         return $messages;
     }
