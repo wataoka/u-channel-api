@@ -19,10 +19,10 @@
 |:--|:--|:--|
 | GET/HEAD  | api/messages                              |全メッセージの取得|
 | POST      | api/messages                              |メッセージの投稿|
-| GET/HEAD  | api/messages/university/{university_id}   |`university_id`が`{university_id}`であるメッセージの取得|
 | GET/HEAD  | api/messages/{message}                    |特定のメッセージの取得|
 | PUT/PATCH | api/messages/{message}                    |特定のメッセージの編集|
 | DELETE    | api/messages/{message}                    |特定のメッセージの削除|
+| GET/HEAD  | api/messages/university/{university_id}   |`university_id`が`{university_id}`であるメッセージの取得|
 
 ## University API
 | Method    | URI                                       |説明|
